@@ -4,64 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Marcia Barcelo" />
-    <meta name="description" content="Pagina web criada durante curso Adaptelas ofertado por Adapti" />
+    <meta
+      name="description"
+      content="Pagina web criada durante curso Adaptelas ofertado por Adapti"
+    />
     <meta name="keywords" content="desenvolvedora web front-end, HTML e CSS" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://gist.githubusercontent.com/DavidWells/18e73022e723037a50d6/raw/31b030534440f31f3ddcd72c4916cc47eb1be520/reset.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Adapti - Adaptelas</title>
   </head>
   <body>
-    <header class="topo">
-      <nav class="topo-text">
-        <img src="imagens/logo_nav.png" alt="Logo da Adapti" />
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre nós</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Portfólio</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </nav>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="https://www.adapti.info/" target="_blank"
+            ><img src="imagens/logo_nav.png" alt="Logo da Adapti"
+          /></a>
+        </div>
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#Sobre">Sobre nós</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li>
+              <a
+                href="https://mpbarcelo.github.io/Paginaportifolio/"
+                target="_blank"
+                >Portfólio</a
+              >
+            </li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="content">
-        <h1 class="content-text">Adaptelas</h1>
-        <p class="text">
-          Curso online de desenvolvimento web voltado exclusivamente para
-          mulheres e ofertado pela Adapti, empresa júnior de Computação da UFES
-          do campus de São Mateus. O curso oferece capacitação na área de
-          programação front-end (parte visual de um Site), proporcionando uma
-          formação completa e acessível, que vai do nível básico ao avançado.
-        </p>
-        <img class="image" src="imagens/body.png" alt="Imagem mulher em pé" />
-      </section>
-      <footer>
-        <section class="content">
-          <img
-            class="logo"
-            src="imagens/logo_footer.png"
-            alt="Logo da Adapti"
-          />
-         <div class="text">
-          <h2>Sobre a Adapti</h2>
+      <div class="container">
+        <div class="txt">
+          <h1>Adaptelas</h1>
+          <p>
+            Curso online de desenvolvimento web voltado exclusivamente para
+            mulheres e ofertado pela Adapti, empresa júnior de Computação da
+            UFES do campus de São Mateus. O curso oferece capacitação na área de
+            programação front-end (parte visual de um Site), proporcionando uma
+            formação completa e acessível, que vai do nível básico ao avançado.
+          </p>
+        </div>
+        <div class="image">
+          <img src="imagens/body.png" alt="Imagem de uma mulher em pé" />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <img
+          class="rodape-logo"
+          src="imagens/logo_footer.png"
+          alt="Logo da Adapti"
+        />
+        <div class="container-txt">
+          <h2 id="Sobre">Sobre a Adapti</h2>
           <p>
             A Adapti é uma empresa júnior com foco em desenvolvimento de Sites e
             Sistemas web. Buscamos sempre ajudar pequenas e médias empresas a
             crescer e otimizar os seus processos, por meio de soluções digitais.
           </p>
-         </div>
-        </section>
-
-        <section class="content-two">
-          <div class="text">
-            <p>Desenvolvido em 2024 - Adapti - Soluções Web</p>
-          </div>
-        </section>
-      </footer>
-    </main>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-two">
+      <div class="container">
+        <div class="rodape-txt-two">
+          <p><span>Desenvolvido em 2024</span> - Adapti - Soluções Web</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

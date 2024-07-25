@@ -1,83 +1,153 @@
+/* ESTILO GERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
-.topo {
+
+/* ESTILO DO HEADER */
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header {
+  padding: 22px 115px 22px 114px;
   background-color: #610588;
-  width: 100%;
-  height: 84px;
-  padding-left: 40px;
+  font-family: "Nunito", sans-serif;
 }
-
-.topo-text img {
-  padding-left: 10px;
-}
-.topo-text,
-li,
-a {
-  list-style: none;
+.menu-desktop ul{
+  display: flex;  
+  list-style-type: none;
   text-decoration: none;
-  padding-left: 30px;
-  color: #ffffff;
+  
 }
-.content {
+
+.menu-desktop
+nav ul li {
+  display: inline-block;
+  padding-left: 20px;
+ 
+}
+.menu-desktop
+a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  list-style-type: none;  
+  padding: 20px;
+}
+/* ESTILO DO MAIN */
+
+main {
+  padding: 60px 115px 60px 114px;
   background-color: #caade6;
+}
+main .container {
+  display: flex;
+  align-items: center;
+  
+}
+
+main .container h1 {
+  font-family: "Roboto", sans-serif;  
+  padding-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  line-height: 75px;
   color: #610588;
-  padding-top: 80px;
-  width: 100%;
-  height: 700px;
-}
-.content .text {
-  font-size: 18px;
-  padding: 28px;
-  padding-top: 10px;
-  text-align: left;
-  color: #610588;
-}
-.content,
-img {
-  padding-left: 30px;
-}
-
-.content-text {
   text-align: center;
-  padding-bottom: 10px;
+  font-size: 64px;
+  font-weight: 900;
 }
-
-footer .content {
-  background-color: #610588;
-  color: #ffffff;
-  width: 100%;
-  height: 450px;
-  padding: 50px;
-}
-
-footer .content .text{
-  padding: 30px;
-}
-
-footer .content,
-h2 {
-  padding-bottom: 10px;
-  text-align: center;
-  color: #ffffff;
-}
-footer .content,
+main .container
 p {
-  font-size: 18px;
-  text-align: left;
-  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  color: #610588;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 35.46px;
+  
+  height: 315px;
+  text-align: justify;
+  align-items: center;
+}
+.container:has(.txt + .image) {
+  gap: 184px;
+}
+/* ESTILO DO FOOTER */
+footer .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer {
+  padding: 88px 115px 88px 114px;
+  background-color: #610588; 
 }
 
-footer .content-two {
-  width: 100%;
-  height: 50px;
-  background-color: #aa79dc;
+footer .rodape-logo {
+  width: 172px;
+  height: 117px;
 }
-footer .content-two p {
+footer .container
+h2 {
+  font-family: "Nunito", sans-serif;
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 38.19px;
   text-align: center;
-  padding: 18px;
+  align-items: center;
 }
+.container:has(.rodape-logo + .container-txt){
+  gap: 381px;
+}
+footer .container p{
+  font-family: "Nunito", sans-serif; 
+  height: 108px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27.28px;
+  text-align: justify;
+  align-items: center;  
+}
+
+footer.footer-two .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.footer-two {
+  background-color: #caade6;
+  padding: 14px 538px 14px 538px;
+}
+
+footer.footer-two p{
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.82px;
+  width: 364px;
+  height: 22px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+footer.footer-two span{
+  font-family: "Nunito", sans-serif;
+  width: 364px;
+  height: 22px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.82px;
+  color: #610588;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
