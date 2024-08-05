@@ -53,7 +53,7 @@ main .container {
 
 main .container h1 {
   font-family: "Roboto", sans-serif;  
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   line-height: 75px;
   color: #610588;
@@ -74,7 +74,7 @@ p {
   align-items: center;
 }
 .container:has(.txt + .image) {
-  gap: 184px;
+  gap: 180px;
 }
 /* ESTILO DO FOOTER */
 footer .container{
@@ -151,3 +151,110 @@ footer.footer-two span{
 
 }
 
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+@media (max-width: 768px) {
+  /* Para telas menores que 768px */
+  header {
+    display: block;
+    padding: 10px 22px; /* Reduz o padding para telas menores */
+  }
+
+  header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-desktop ul {
+    display: flex;
+    flex-direction: row; /* Muda a direção da lista para coluna */
+   
+  }
+  .menu-desktop a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-wrap: nowrap;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  main {
+    display: block;
+    padding: 22px 22px;
+  }
+  main .container h1 {
+    font-size: 48px;
+    line-height: 50px;
+    padding: 30px 20px;
+  }
+  main .container p {
+    padding: 0 20px 20px 20px;
+    font-size: 20px;
+    line-height: 34px;
+    height: 200px;
+  }
+ 
+  .container .image {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    flex-direction: column; /* Muda a direção do flexbox para coluna */
+  }
+  .container:has(.rodape-logo + .container-txt) {
+    gap: 90px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 12px 32px;
+  }
+  .footer .container {    
+    flex-direction: column-reverse;
+  }
+  footer .rodape-logo {
+    width: 122px;
+    height: 82px;
+  }
+  footer .container h2{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  footer .container p {    
+    height: 100px;    
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;    
+  }  
+  .footer-two {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+  }
+  .footer-two span {
+    display: block;
+    flex-direction: column-reverse;
+  }
+  .footer-two p {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }  
+}
+
+@media (min-width: 1200px) {  
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 22px;  
+}
+}

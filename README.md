@@ -33,3 +33,10 @@ Usando os displays para deixar o site organizado.
 
 ![Imagem da pagina com html stilização final](./imagens/atividade-04.png)
 
+# Tarefa 05 Design Responsivo
+
+## Descrição
+ Design Responsivo, utilizando media query para permitir que o site se torne responsivo.
+
+![Imagem da pagina com html stilização final](./imagens/responsivo.png)
+
